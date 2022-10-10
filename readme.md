@@ -1,5 +1,5 @@
 
- maxXP is an online visualization tool for relationships among objects such as people, firms, brands, products, or even plants, animals, proteins, genes, etc. mapXP was developed by Daniel M. Ringel for his Journal of Marketing article titled "Multimarket Membership Mapping". The full open access article is avialable for free at http://m4.ringel.us
+ maxXP is an online visualization tool for relationships among objects such as people, firms, brands, products, or even plants, animals, proteins, genes, etc. mapXP was developed by Daniel M. Ringel for his Journal of Marketing article titled "Multimarket Membership Mapping". The full open access Journal of Marketing Research article is avialable for free at http://m4.ringel.us
 
 For a demo, visit www.mapxp.app/mapxp
 
