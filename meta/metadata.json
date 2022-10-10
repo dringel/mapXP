@@ -1,0 +1,83 @@
+[{
+	"variable": "cluster",
+	"variableName": "Submarket",
+	"type": "categorical",
+	"colorArray": [
+		"#882255",
+		"#117733",
+		"#88CCEE",
+		"#DDCC77",
+		"#AA4499",
+		"#44AA99",
+		"#332288",
+		"#999933",
+		"#CC6677",
+		"#DDDDDD",
+		"#000000"
+	    ],
+	"tooltip": "no"
+}, {
+	"variable": "brand",
+	"variableName": "Brand",
+	"type": "categorical",
+	"colorArray": [
+		"#882255",
+		"#117733",
+		"#88CCEE",
+		"#DDCC77",
+		"#AA4499",
+		"#44AA99",
+		"#332288",
+		"#999933",
+		"#CC6677",
+		"#DDDDDD",
+		"#000000"
+	    ],
+	"tooltip": "yes",
+	"tooltipOrder": 1
+},{
+	"variable": "price",
+	"variableName": "Price",
+	"type": "quantitative",
+	"inColorDropdown": true,
+	"colorOrder": "descending",
+	"currency": "$",
+	"tooltip": "yes",
+	"tooltipOrder": 2
+},{
+	"variable": "share",
+	"variableName": "Marketshare",
+	"type": "quantitative",
+	"inColorDropdown": true,
+	"colorOrder": "ascending",
+	"unit": "%",
+	"tooltip": "yes",
+	"tooltipOrder": 3
+}, {
+	"variable": "Memberships",
+	"variableName": "Memberships",
+	"type": "categorical",
+	"colorArray": [
+		"black",
+		"rgb(160, 160, 160)"
+	    ],
+	"tooltip": "yes",
+	"tooltipOrder": 4
+}, {
+	"features": {
+		"sameSize": 10,
+		"links": "curvededges",
+		"fileName": "network/network.json",
+		"selectedColor": "cluster",
+		"selectedSize": "share",
+		"sameColorPosition": 0,
+		"sameSizePosition": 0,
+		"showLabels": true,
+		"sizeLabels": true,
+		"showTooltip": true,
+		"zoomLevel": 0.8,
+		"pathsPercentage": 100,
+		"rotateAngle": 143,
+		"verticalFlip": false
+	}
+}]
