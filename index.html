@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex,nofollow"/>
+		<link rel="stylesheet" type="text/css" href="networkchart.css">
+		<title>mapXP</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="wrapper">
+				<div id="mapxp">
+					<h1>mapXP</h1>
+				</div>
+			    <div id="dataset">
+					 <small>Numerical Example</small>
+				</div>
+
+			</div>
+
+			<!-- START NOTICE: You can remove the section below when you use mapXP for your own purposes. However, you must always cite the associated research article:
+				Ringel, D. M. (2022). EXPRESS: Multimarket Membership Mapping. Journal of Marketing Research, 0(0). https://doi.org/10.1177/00222437221110460 -->
+
+			<div id="impressum">
+				<b>maxXP</b> is an online visualization tool for relationships among objects such as people, firms, brands, products, or even plants, animals, proteins, genes, etc. <b>mapXP</b> was developed by Daniel M. Ringel for his <i>Journal of Marketing</i> article titled "<b>Multimarket Membership Mapping</b>". Please download the full <i><b>open access article for free</b></i> from here: <a href="http://m4.ringel.us">Full Article</a>. You may use and adapt mapXP for your own purposes, but you must always cite the original M4 article as follows: <i>Ringel, D. M. (2022). EXPRESS: Multimarket Membership Mapping. Journal of Marketing Research, 0(0). <a href="https://doi.org/10.1177/00222437221110460 ">https://doi.org/10.1177/00222437221110460</a></i>
+			</div>
+
+			<!-- End NOTICE -->
+
+			<div id="wrapper">
+					<div id="notesdiv">
+				   </div>
+			</div>
+			<div id="controllerdiv">
+				<div id="searchdiv">
+					<input id="searchinput">
+					<button id="searchbutton">Search</button>
+				</div>
+				<div id="colormenudiv"><label><a href="#" class="helppop" helptext="Use the Color Drop-Down to vary bubble color according to selected attribute. If the selected attribute is categorical, then each category receives a unique color. If the attribute is continuous, then a heat-map is generated."><span>Color:</span></a> </label></div>
+				<div id="sizemenudiv"><label><a href="#" class="helppop" helptext="Use the Size Drop-Down to vary bubble diameter according to selected continuous attribute."><span>Size:</span></a> </label></div>
+				<div id="showlabelsdiv"><label><a href="#" class="helppop" helptext="Check to show product names next to each product bubble in map"><span>Show Names </span></a></label>
+					<input type="checkbox" id="labelscheckbox">
+				</div>
+				<div id="changelabelsdiv"><label><a href="#" class="helppop" helptext="Check to vary the size of product names next to each product bubble in map according to the size attribute selected in the Size Drop-Down. Requires Show-Names-Check-Box to be checked."><span>Adaptive Name Size </span></a></label>
+					<input type="checkbox" id="changelabelscheckbox">
+				</div>
+				<div id="showtooltipsdiv"><label><a href="#" class="helppop" helptext="Check to see a Pop-up with key product attributes when you mouse-over any product bubble in the map."><span>Attribute Pop-up </span></a></label>
+					<input type="checkbox" id="tooltipscheckbox">
+				</div>
+			</div>
+			<div id="svgcontainer"></div>
+			<br>
+			<div id="wrapper">
+				<div id="controllerdiv2">
+					<div id="anglediv">
+						<button id="anglebutton" style="margin-right:0px;margin-left:0px">Rotate</button>
+						<input id="angleinput" maxlength="3" size="3" style="margin-left:0px;height:16px;width:19px">
+					</div>
+					<div>
+						<button id="flipbutton" style="margin-top:4px;margin-left:0px">Reflect Vertical</button>
+					</div>
+					<div>
+						<button id="downloadbutton" style="margin-top:4px;margin-left:0px">Download .SVG</button>
+					</div>
+					<div id="versioncopyright">
+					 <a href="#" class="matrixtip"><span title="Show Relationship Matrix">Show Matrix</span></a>
+					 <br><br>Version 1.5 <br>October 2022<br><br>&copy; 2022 with <br>Daniel M. Ringel<br>UNC Chapel Hill<br><a href="http://m4.ringel.us">Download Article</a>
+					</div>
+					
+				</div>
+				<div id="impressum">
+					<b>Quickstart: </b><i>Map colors accessible to the colorblind where possible</i>
+					<ul>
+						<li><i><b>Explore Map</b></i> by attributes according to bubble color and size using <i><b>drop-downs</b></i> at top</li>
+					    <li><i><b>Zoom-in</b></i>  or out with mouse wheel or slider on right</li>
+					    <li><i><b>Click+Drag</b></i>  moves map (can be used in combination with zoom)</li>
+					    <li><i><b>Show Names</b></i>  of products in map with check-box at top</li>  
+					    <li><i><b>Adaptive Name Size</b></i> (check-box at top) varies size of product names in map according to selected size attribute (drop-down)</li>    
+					    <li><i><b>Summary</b></i> of product attributes on mouse-over when check-box <i><b>"Attribute Pop-up"</b></i>  is checked</li>
+					    <li><i><b>Mouse-over Legend</b></i> to highlight products in map corresponding to legend criteria (e.g., on heat-map mouse over dark green color to show all matching products)</li>
+					    <li><i><b>Search-Bar</b></i> with autocomplete helps you find a product in the map faster when you enter its name or part of its name</li>
+					    <li><i><b>Rotate & Reflect</b></i> map using controls on the left of this text box: enter degrees (-360 to 360) and click button to rotate; reflect vertically by clicking button</li>
+					    <li><i><b>Download .SVG</b></i> let's you download the current map view as a scalable vector graphics file. The advantage of SVG files is that you can later rescaling your map to any size without loss of resolution. You can open an SVG file in any browser. You can convert an SVG file to a PDF or JPG file using Adobe Illustrator, Photoshop, or various free tools online.
+					    <li><i><b>Double-Click</b></i> on map to reset zoom and center map 
+					    <li><i><b>Please Cite</b></i> the associated research article when you use mapXP: <i>Ringel, D. M. (2022). EXPRESS: Multimarket Membership Mapping. Journal of Marketing Research, 0(0). <a href="https://doi.org/10.1177/00222437221110460 ">https://doi.org/10.1177/00222437221110460</a></i> 
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+    	<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="networkchart.js"></script>   <!-- path to main java script file for map visualization -->
+	</body>
+</html>

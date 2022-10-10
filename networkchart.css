@@ -1,0 +1,507 @@
+body { 
+	background-color: white;
+	font-family: "Libre Baskerville", serif;
+}
+
+#wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: top;
+	margin-bottom: 6px;
+	position:relative;
+}
+
+#container {
+	max-width: 1102px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	padding: 1px 10px 10px 10px;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px #fff;
+}
+
+#controllerdiv {
+	width: 100%;
+}
+
+#controllerdiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 6px;
+}
+
+
+#controllerdiv2 {
+	width: 15%;
+}
+
+#controllerdiv2 {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+
+
+#impressum {
+	width:100%;
+	align-items: left;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: dimgray;
+	font-family: "Open Sans";
+	font-size: 12px;
+	padding: 4px 4px 4px 4px;
+}
+
+#versioncopyright {
+	width:100%;
+	align-items: left;
+	padding: 4px 4px 4px 4px;
+	font-family: "Open Sans", sans-serif;
+	color: #666;
+	font-size: 12px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	color: #333;
+}
+
+#mapxp {
+	width:15%;
+	align-items: left;
+}
+
+#dataset {
+	width:60%;
+	align-items: left;
+	font-weight: lighter;
+	color: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 32px;
+	font-style: italic;
+	margin-top: 00px;
+	margin-bottom: 0px;
+
+}
+
+
+#selectdiv {
+	width: 30%;
+	align-items: left;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+#notesdiv {
+	width: 80%;
+	vertical-align: text-top;
+	align-items: left;
+	margin-left: 15px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 10px;
+}
+
+
+button {
+	margin-left: -5px;
+}
+
+#svgcontainer {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+h1 {
+	font-weight: 300;
+	color: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 32px;
+	margin-top: 00px;
+	margin-bottom: 0px;
+	}
+
+h2 {
+	font-weight: 300;
+	color: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-top: -8px;
+	}
+
+h3 {
+	font-weight: 300;
+	color: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 28px;
+	margin-bottom: 0px;
+	margin-top: -10px;
+	text-align: center;
+	}
+
+p, label {
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	color: #333;
+}
+
+label {
+	font-family: "Open Sans", sans-serif;
+	color: #666;
+}
+
+a {
+	color: darkslategray;
+}
+
+a:hover {
+	color: darkslategray;
+}
+
+nav {
+	font-weight: 300;
+	color: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	text-align: left;
+	}
+
+#svganchor {
+	margin: auto;
+}
+
+#tooltipdiv{    
+	position: absolute;
+	text-align: left;
+	color: dimgray;
+	font-family: "Libre Baskerville", serif;
+	white-space: normal;
+	padding: 10px;
+	font-size: 10px;
+	background: whitesmoke; 
+	border: 1px solid #ccc; 
+	border-radius: 4px;
+	pointer-events: none;
+	cursor: none;
+	min-width: 100px;
+	max-width: 200px;
+}
+
+#tooltipdiv span{
+	color: darkslategray;
+	text-transform: capitalize;
+	font-size: 10px;
+}
+
+#tooltipdiv img {
+	width: 150px;
+	border: 1px solid #ddd;
+}
+
+.tooltipImage {
+	border: 1px solid #ddd;
+}
+
+
+
+.matrixtip{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+}
+
+.matrixtip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: url("images/Simulated-Transformed-Relationship-Matrix-S.png");
+    left: 20%;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 98;
+    width: 400px;
+}
+
+.matrixtip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+.matrixtip2{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+}
+
+.matrixtip2:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: url("images/Simulated-Relationship-Matrix-S.png");
+    left: 20%;
+    padding: 12px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 405px;
+}
+
+.matrixtip2:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+.helppop{
+    display: inline;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+	color: #666;
+	text-decoration: none;
+}
+
+.helppop:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    font-size: 11px;
+    content: attr(helptext);
+    left: 20%;
+    padding: 7px 7px;
+    position: absolute;
+    z-index: 98;
+    width: 250px;
+}
+
+.helppop:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+
+
+
+input {
+	padding: 4px 12px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+	font-size: 11px;
+	color: dimgray;
+
+}
+
+select {
+	color: #666;
+	background-color: white;
+	font-size: 12px;
+	padding: 4px 10px 4px 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+button {
+	color: #666;
+	background-color: whitesmoke;
+	font-size: 12px;
+	padding: 4px 10px 4px 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	margin-right: 10px;
+}
+
+button:hover{
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; 
+}
+
+button:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; 
+}
+
+button:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+svg {
+	background-color: white;
+}
+
+.labelText {
+	font-family: "Libre Baskerville", serif;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+	dominant-baseline: central;
+}
+
+.zoomTitle {
+	fill: darkslategray;
+	font-family: "Libre Baskerville", sans-serif;
+	font-size: 14px;
+	text-anchor: middle;
+	pointer-events: none;
+}
+
+.bottomTitle {
+	fill: darkslategray;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	pointer-events: none;
+}
+
+.zoomText {
+	fill: dimgray;
+	font-family: "Libre Baskerville", serif;
+	font-size: 12px;
+	dominant-baseline: central;
+	text-anchor: middle;
+	pointer-events: none;
+}
+
+.zoomText2 {
+	fill: #666;
+	font-family: "Libre Baskerville", serif;
+	font-size: 8px;
+	dominant-baseline: central;
+	pointer-events: none;
+}
+
+.legendText {
+	fill: dimgray;
+	font-family: "Libre Baskerville", serif;
+	font-size: 12px;
+	dominant-baseline: central;
+	pointer-events: none;
+}
+
+.legendText2 {
+	fill: #666;
+	font-family: "Libre Baskerville", serif;
+	font-size: 10px;
+	dominant-baseline: central;
+}
+
+.zoomText3 {
+	fill: #888;
+	font-family: "Libre Baskerville", serif;
+	font-size: 8px;
+	dominant-baseline: central;
+	text-anchor: middle;
+	pointer-events: none;
+}
+
+.bottomAxis path {
+	stroke: none;
+}
+
+.bottomAxis line {
+	stroke: dimgray;
+}
+
+.bottomAxis text {
+	fill: #888;
+}
+
+@media screen and (max-width: 850px){
+	#container {
+		max-width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*jQuery*/
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete { position: absolute; cursor: default; }       
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	color: dimgray;
+	background-color: white;
+	border: 1px solid gray;
+    list-style:none;
+    padding: 10px;
+    margin: 2px;
+    display:block;
+}
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+        margin:0;
+        padding: 0;
+}
+.ui-menu .ui-menu-item a {
+        text-decoration:none;
+        display:block;
+        padding:.2em .4em;
+        line-height:1.5;
+        zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+        margin: -1px;
+}
